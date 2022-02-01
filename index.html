@@ -2,14 +2,21 @@
 <html lang="en">
   <head>
     <title>Dog's Town</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="images/h-logo.png" alt="" />
     <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
   </head>
   <body>
     <header>
       <div class="head">
         <div class="logo">
-          <img class="logo" src="images/logo.png" alt="logo" />
+          <img
+            class="logo"
+            src="images/logo.png"
+            alt="logo"
+            onclick="thanks()"
+          />
         </div>
       </div>
       <nav class="nav">
@@ -33,16 +40,31 @@
           You will see different types of dogs here and check out the leaders of
           this town below.
         </div>
-        <div class="sign-up"><button class="button">Sign Up</button></div>
+        <div class="sign-up">
+          <button class="button" onclick="thanks()">Sign Up</button>
+        </div>
       </div>
       <div class="img"><img src="images/pp.jpg" alt="coverpic" /></div>
     </div>
     <div class="sub-txt">Leaders Of Dog's Town</div>
     <div class="leaders">
-      <div><img class="leader" src="images/dog.jpg" alt=" " /></div>
-      <div><img class="leader" src="images/doggy.jpg" alt="" /></div>
-      <div><img class="leader" src="images/G-shepard.jpg" alt="" /></div>
-      <div><img class="leader" src="images/she.jpg" alt="" /></div>
+      <div>
+        <img class="leader" src="images/dog.jpg" alt=" " onclick="thanks()" />
+      </div>
+      <div>
+        <img class="leader" src="images/doggy.jpg" alt="" onclick="thanks()" />
+      </div>
+      <div>
+        <img
+          class="leader"
+          src="images/G-shepard.jpg"
+          alt=""
+          onclick="thanks()"
+        />
+      </div>
+      <div>
+        <img class="leader" src="images/she.jpg" alt="" onclick="thanks()" />
+      </div>
     </div>
     <div class="names">
       <h3><div class="name">Mr. Cute</div></h3>
