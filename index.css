@@ -4,7 +4,6 @@ header {
   align-items: center;
   background-color: #1f2937;
   color: white;
-  justify-content: space-between;
   padding: 20px;
 }
 .nav {
@@ -71,9 +70,7 @@ a {
   justify-content: center;
   padding: 20px;
 }
-.sub {
-  justify-content: center;
-}
+
 img {
   width: 400px;
   height: auto;
@@ -102,25 +99,39 @@ img {
 }
 .leaders {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  text-align: center;
+  overflow:auto;
+  justify-content:space-between;
 }
+
+.leaders::-webkit-scrollbar {
+  width: 12px;               
+}
+
+.leaders::-webkit-scrollbar-track {
+  background: black;  
+  border-radius: 20px;   
+}
+
+.leaders::-webkit-scrollbar-thumb {
+  background-color: white;   
+  border-radius: 20px;       
+  border: 3px solid cyan;
+}
+
 .leader {
   width: 220px;
   height: 220px;
+  justify-content: space-around;
   margin-bottom: 10px;
   border-radius: 50px;
   align-items: center;
-  flex-wrap: wrap;
   border-color: rgb(35, 195, 248);
   border-style: solid;
   border-width: 5px;
   cursor: pointer;
 }
-.leader:hover {
-  background-color: cyan;
-}
+
 .names {
   text-align: center;
   display: flex;
